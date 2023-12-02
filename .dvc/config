@@ -1,0 +1,6 @@
+[core]
+    remote = amazon_s3
+['remote "gdrive"']
+    url = gdrive://1V3g4s6Pjg5F9SgOdWa0Hj9qLH56xxPzU
+['remote "amazon_s3"']
+    url = s3://inf-0077-t1/
