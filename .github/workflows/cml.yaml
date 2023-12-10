@@ -16,7 +16,7 @@ jobs:
         run: |
           echo "Installing the dependencies..."
           pip install -r requirements.txt
-          echo "Pulling data from remote dvc"
-          dvc pull
+          echo "Pulling data from remote dvc..."
+          dvc pull --verbose
           echo "Running the pipeline..."
           dvc repro
