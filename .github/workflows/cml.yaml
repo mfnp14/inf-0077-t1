@@ -7,14 +7,14 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
-        python-version: '3.9'
-        cache: 'pip'
+          python-version: '3.9'
+          cache: 'pip'
       - uses: iterative/setup-dvc@v1
       - name: Train model
         env:
-          GDRIVE_CREDENTIALS_DATA: ${{secrets.GDRIVE_CREDENTIALS_DATA}}
-      run: |
-        echo "Starting to train the model..."
-        pip install -r requirements.txt
-        dvc pull
-        dvc repro
+          GDRIVE_CREDENTIALS_DATA: ${{ secrets.GDRIVE_CREDENTIALS_DATA }}
+        run: |
+          echo "Starting to train the model..."
+          pip install -r requirements.txt
+          dvc pull
+          dvc repro
