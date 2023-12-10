@@ -1,0 +1,32 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python3 Untitled-1.py
+    deps:
+    - path: ./Untitled-1.py
+      hash: md5
+      md5: 82d3c498d60f16a3734afc4db5cf5cee
+      size: 3274
+    - path: ./params.yaml
+      hash: md5
+      md5: f9d9c2ccda4bfa67897aea012362a7a5
+      size: 121
+    - path: ds/train
+      hash: md5
+      md5: 73adc517981a61159b88aad8dd5c13de.dir
+      size: 182049488
+      nfiles: 8004
+    - path: ds/valid
+      hash: md5
+      md5: 5f648391fe59edd9cf989cb343b35727.dir
+      size: 45751668
+      nfiles: 2003
+    outs:
+    - path: ./model.keras
+      hash: md5
+      md5: 946c71080678adfae5aad22f5ba82019
+      size: 64920781
+    - path: dvclive/metrics.json
+      hash: md5
+      md5: 8a80554c91d9fca8acb82f023de02f11
+      size: 3
