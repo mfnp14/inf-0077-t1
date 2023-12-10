@@ -1,0 +1,6 @@
+tensorflow
+dvc
+dvclive
+tensorflow-datasets
+dvc-gdrive
+scipy
