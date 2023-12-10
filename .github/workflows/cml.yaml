@@ -14,7 +14,9 @@ jobs:
         env:
           GDRIVE_CREDENTIALS_DATA: ${{ secrets.GDRIVE_CREDENTIALS_DATA }}
         run: |
-          echo "Starting to train the model..."
+          echo "Installing the dependencies..."
           pip install -r requirements.txt
+          echo "Pulling data from remote dvc"
           dvc pull
+          echo "Running the pipeline..."
           dvc repro
