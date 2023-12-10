@@ -1,5 +1,5 @@
 [core]
-    remote = amazon_s3
+    remote = gdrive
 ['remote "gdrive"']
     url = gdrive://1V3g4s6Pjg5F9SgOdWa0Hj9qLH56xxPzU
 ['remote "amazon_s3"']
