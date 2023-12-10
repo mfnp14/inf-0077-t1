@@ -1,0 +1,23 @@
+stages:
+  train:
+    cmd: python3 Untitled-1.py
+    deps:
+    - ./Untitled-1.py
+    - ds/train
+    - ds/valid
+    - ./params.yaml
+    outs:
+    - ./model.keras
+    metrics:
+    - dvclive/metrics.json:
+        cache: false
+params:
+- params.yaml
+plots:
+- dvclive/plots/metrics:
+    x: step
+artifacts:
+  model:
+    path: model.keras
+    type: model
+    desc: model
