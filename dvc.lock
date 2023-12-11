@@ -9,7 +9,7 @@ stages:
       size: 3274
     - path: ./params.yaml
       hash: md5
-      md5: f9d9c2ccda4bfa67897aea012362a7a5
+      md5: 682a783dac55acd42d9bf28aa2bbfd93
       size: 121
     - path: ds/train
       hash: md5
