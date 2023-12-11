@@ -6,8 +6,6 @@ stages:
     - ds/train
     - ds/valid
     - ./params.yaml
-    outs:
-    - ./model.keras
     metrics:
     - dvclive/metrics.json:
         cache: false
