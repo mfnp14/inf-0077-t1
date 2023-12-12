@@ -9,7 +9,7 @@ stages:
       size: 3274
     - path: ./params.yaml
       hash: md5
-      md5: 682a783dac55acd42d9bf28aa2bbfd93
+      md5: f9d9c2ccda4bfa67897aea012362a7a5
       size: 121
     - path: ds/train
       hash: md5
@@ -22,10 +22,6 @@ stages:
       size: 45751668
       nfiles: 2003
     outs:
-    - path: ./model.keras
-      hash: md5
-      md5: 946c71080678adfae5aad22f5ba82019
-      size: 64920781
     - path: dvclive/metrics.json
       hash: md5
       md5: 8a80554c91d9fca8acb82f023de02f11
